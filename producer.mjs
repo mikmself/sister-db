@@ -3,7 +3,7 @@ import readline from "readline";
 
 const kafka = new Kafka({
   clientId: "my-producer",
-  brokers: ["192.168.0.105:9091", "192.168.0.106:9092", "192.168.0.103:9093"],
+  brokers: ["192.168.158.94:9092"],
 });
 
 const producer = kafka.producer();

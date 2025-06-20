@@ -9,7 +9,7 @@ const db = await mysql.createConnection({
 
 const kafka = new Kafka({
   clientId: "irga",
-  brokers: ["192.168.0.105:9091", "192.168.0.106:9092", "192.168.0.103:9093"],
+  brokers: ["192.168.158.94:9092"],
 });
 
 const consumer = kafka.consumer({ groupId: "irga" });
